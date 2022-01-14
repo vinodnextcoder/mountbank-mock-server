@@ -1,0 +1,29 @@
+
+{
+  "predicates": [
+    {
+      "equals": {
+        "method": "PATCH",
+        "path": "/v1/api/update"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "is": {
+        "statusCode": 500,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "status": {
+            "code": 500,
+            "header": "Unable to proceed",
+            "description": "Record not updated"
+          },
+          "data": null
+        }
+      }
+    }
+  ]
+}

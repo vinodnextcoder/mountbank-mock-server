@@ -1,0 +1,32 @@
+
+{
+  "predicates": [
+    {
+      "equals": {
+        "method": "GET",
+        "path": "/v1/api/read"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "is": {
+        "statusCode": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "status": {
+            "code": 1000,
+            "header": "SUCCESS",
+            "description": "SUCCESS"
+          },
+          "data": {
+            "name":"vinod k",
+            "email":"test@test.com"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+
+{
+  "predicates": [
+    {
+      "equals": {
+        "method": "POST",
+        "path": "/v1/api/create"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "is": {
+        "statusCode": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "status": {
+            "code": 1000,
+            "header": "SUCCESS",
+            "description": "SUCCESS"
+          },
+          "data": null
+        }
+      }
+    }
+  ]
+}

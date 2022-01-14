@@ -1,0 +1,18 @@
+{
+  "port": 8080,
+  "protocol": "http",
+  "name": "mountbank server",
+  "recordRequests": true,
+  "defaultResponse": {
+    "headers": {
+      "connection": "keep-alive",
+      "Content-Type": "application/json"
+    }
+  },
+  "stubs": [
+   <% include ./stubs/mock_success_1000.json %>,
+   <% include ./stubs/mock_success_1001.json %>,
+   <% include ./stubs/mock_success_1002.json %>,
+   <% include ./stubs/mock_success_1003.json %>
+  ]
+ }
